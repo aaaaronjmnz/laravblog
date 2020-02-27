@@ -11,7 +11,7 @@
 
                 <!-- BODY GOES HERE -->
                 <p><h5>This is where you land when you go to laravblog. It's plain, I know.</h5></p>
-                <p>im just checking something really</p>
+               
             </div>
 
 @endsection
