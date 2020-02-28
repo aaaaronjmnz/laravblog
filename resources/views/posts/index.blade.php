@@ -12,7 +12,7 @@
                 @if(count($posts) > 0)
                     @foreach($posts as $post)
                         <div class="card mb-4">
-                            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                            <img class="card-img-top" src="storage/cover_images/{{ $post->cover_image }}" alt="Card image cap">
                             <div class="card-body">
                                 <h2 class="card-title">{{ $post->title }}</h2>
                                 <!--used require laravel/helpers to help me limit the viewable strings using Str class limit method -->

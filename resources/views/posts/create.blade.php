@@ -12,7 +12,7 @@
                 <!-- FORM TAGS GOES HERE FOR CREATING POSTS -->
                 <div class="col-md-auto">
                     @include('inc.messages')
-                    {!! Form::open(['action' => 'PostController@store', 'method' => 'POST']) !!}
+                    {!! Form::open(['action' => 'PostController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                         <div class="form-group">
                             {{ Form::label('title', 'Title') }}
                             {{ Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title']) }}
@@ -20,6 +20,10 @@
                         <div class="form-group">
                             {{ Form::label('body', 'Body') }}
                             {{ Form::textarea('body', '', ['class' => 'form-control', 'placeholder' => 'Body',  'id' => 'summary-ckeditor']) }}
+                        </div>
+                        <div class="form-group">
+                            {{ Form::label('Cover Image ') }} <br \>
+                            {{ Form::file('cover_image') }}
                         </div>
                         <div class="form-group">
                             {{ Form::submit('Submit', ['class' => 'btn btn-outline-primary']) }}

@@ -10,10 +10,11 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
-                    <a href="/posts/create" class="btn btn-group-vertical">+ Create New Post</a>
-                    <h5>Manage your Posts here</h5>
-                    <table class="table table-striped">
-                        @if(count($posts) > 0)
+                    @if(count($posts) > 0)
+                        <a href="/posts/create" class="btn btn-info">+ Create New Post</a><br \>
+                        <hr>
+                        <h5>Manage your Posts here</h5>
+                        <table class="table table-striped">
                             <tr>
                                 <th>Title</th>
                                 <th>Body</th>
@@ -33,12 +34,15 @@
                                     </td>
                                 </tr>
                             @endforeach
-                        @else
+                        </table>
+                    @else
+                        <h5>Manage your Posts here</h5>
+                        <table class="table table-striped">
                             <tr>
                                 <td>You have no available post. <a href="/posts/create">Make one here!</a></td>
                             </tr>
-                        @endif
-                    </table>
+                        </table>
+                    @endif
                 </div>
             </div>
         </div>

@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7579ccb3-f5a1-4a35-a16b-b45540dfa021" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_28_042035_add_cover_image_to_posts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_28_061925_create_comments_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,13 +129,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1YIKrucBLCrEm4wcZX9hqXE3GBf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BLOGSITE" />
@@ -156,12 +175,17 @@
       <workItem from="1582681406580" duration="26106000" />
       <workItem from="1582757554020" duration="28596000" />
       <workItem from="1582813522438" duration="29000" />
-      <workItem from="1582815074417" duration="825000" />
+      <workItem from="1582815074417" duration="902000" />
+      <workItem from="1582817114174" duration="150000" />
+      <workItem from="1582855317637" duration="12945000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="23" key="#Composer" timestamp="1582624956855">
@@ -184,22 +208,26 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582625589967" />
-    <state width="1361" height="189" key="GridCell.Tab.0.bottom" timestamp="1582628989980">
+    <state width="1361" height="189" key="GridCell.Tab.0.bottom" timestamp="1582817263946">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1361" height="189" key="GridCell.Tab.0.bottom/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582628989980" />
-    <state width="1361" height="189" key="GridCell.Tab.0.center" timestamp="1582628989980">
+    <state width="1361" height="189" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1582817263946" />
+    <state width="1361" height="189" key="GridCell.Tab.0.center" timestamp="1582817263946">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1361" height="189" key="GridCell.Tab.0.center/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582628989980" />
-    <state width="1361" height="189" key="GridCell.Tab.0.left" timestamp="1582628989980">
+    <state width="1361" height="189" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1582817263946" />
+    <state width="1361" height="189" key="GridCell.Tab.0.left" timestamp="1582817263946">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1361" height="189" key="GridCell.Tab.0.left/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582628989980" />
-    <state width="1361" height="189" key="GridCell.Tab.0.right" timestamp="1582628989980">
+    <state width="1361" height="189" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1582817263946" />
+    <state width="1361" height="189" key="GridCell.Tab.0.right" timestamp="1582817263946">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="1361" height="189" key="GridCell.Tab.0.right/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582628989980" />
+    <state width="1361" height="189" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1582817263946" />
     <state x="514" y="289" key="NewPhpFileDialog" timestamp="1582790160053">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -215,34 +243,23 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="401" y="105" width="540" height="540" key="StructurePopup/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582625568045" />
-    <state x="356" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1582815074691">
+    <state x="356" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1582855320039">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="356" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582681427278" />
-    <state x="356" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1582815074691" />
+    <state x="356" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1582855320039" />
     <state x="301" y="65" width="758" height="598" key="find.popup" timestamp="1582688510025">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="301" y="65" width="758" height="598" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1582688510025" />
-    <state x="336" y="162" key="run.anything.popup" timestamp="1582799069980">
+    <state x="336" y="162" key="run.anything.popup" timestamp="1582871494373">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="336" y="162" key="run.anything.popup/0.0.1360.728@0.0.1360.728" timestamp="1582799069980" />
+    <state x="336" y="162" key="run.anything.popup/0.0.1360.728@0.0.1360.728" timestamp="1582871494373" />
     <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582794409008">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582632409584" />
     <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1582794409008" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
-          <line>34</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

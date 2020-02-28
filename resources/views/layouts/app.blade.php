@@ -38,9 +38,12 @@
     @yield('content')
     @include('inc.sbconditions')
 
-    <!-- HANGING DIV CLOSING TAGS DITO KASI NASISIFORMAT NG PAGE PAG WALA YAN -->
+    <!-- HANGING DIV CLOSING TAGS DITO KASI NASISIRA FORMAT NG PAGE PAG WALA YAN -->
     </div>
     </div>
+    <br \>
+    <br \>
+    <br \>
 
     <!-- TURN ON FOOTER HERE KUNG GUSTO MO PERO PANGIT PAG MERON E PUTANG INA -->
     {{--@include('inc.footer')--}}
