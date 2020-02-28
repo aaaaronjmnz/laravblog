@@ -27,19 +27,15 @@
                         </div>
                     @endforeach
 
-                <!-- PAGINATION NA DI NAMAN GUMAGANA PUTANG INA -->
+                <!-- PAGINATION LINKS -->
                 <ul class="pagination justify-content-center mb-4">
-                    <li class="page-item">
-                        <a class="page-link" href="#">&larr; Older</a>
-                    </li>
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#">Newer &rarr;</a>
-                    </li>
+                    {{ $posts->links() }}
                 </ul>
+
+
 
                 @else
                     <h1><small>No Post Found!</small></h1>
-
                 @endif
             </div>
 @endsection

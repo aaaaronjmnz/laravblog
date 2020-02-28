@@ -23,7 +23,7 @@ class PostController extends Controller
         // you could also declare a variable first like this
         // $post = Post::all; <- this one is equivalent to DB::select('SELECT * FROM posts')
         // return view('posts.index')->with('posts', $post);
-        return view('posts.index')->with('posts', POST::orderBy('created_at', 'desc')->get());
+        return view('posts.index')->with('posts', POST::orderBy('created_at', 'desc')->paginate(3)->OnEachSide(5));
     }
 
     /**

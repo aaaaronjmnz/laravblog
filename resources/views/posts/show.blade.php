@@ -14,8 +14,8 @@
 
                 <!-- SHOW TITLE AND BODY -->
                 <img class="card-img-top" src="/storage/cover_images/{{ $post->cover_image }}">
-                <h2 class="my-4">{{ $post->title }}</h2>
-                {!! $post->body !!}
+                <h2 class="my-4"><p>{{ $post->title }}</p></h2>
+                <p>{!! $post->body !!}</p>
 
                 <!-- ENCLOSING DATE AND AUTHOR -->
                 <hr>
@@ -47,12 +47,13 @@
                                 {{ Form::close() }}
                             @endif
                             @forelse ($post->comments as $comment)
-                                <p>{{ $comment->user->name }} {{$comment->created_at}}</p>
-                                <p>{{ $comment->body }}</p>
+                                <p><strong>{{ $comment->user->name }}</strong> {{$comment->created_at}}</p>
+                                <p><i>{{ $comment->body }}</i></p>
                                 <hr>
                             @empty
                                 <p>This post has no comments</p>
                             @endforelse
+                            <span>{{$post->comments->count()}} {{ str_plural('comment', $post->comments->count()) }}</span>
                         </div>
                     </div>
                 </div>
