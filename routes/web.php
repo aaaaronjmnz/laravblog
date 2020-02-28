@@ -25,3 +25,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/posts/{id}', 'PostsController@show')->name('posts.show');
+
+Route::resource('comments', 'CommentController');

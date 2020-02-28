@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7579ccb3-f5a1-4a35-a16b-b45540dfa021" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_28_042035_add_cover_image_to_posts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_28_061925_create_comments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CommentRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Presenters/DatePresenter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -177,7 +165,7 @@
       <workItem from="1582813522438" duration="29000" />
       <workItem from="1582815074417" duration="902000" />
       <workItem from="1582817114174" duration="150000" />
-      <workItem from="1582855317637" duration="12945000" />
+      <workItem from="1582855317637" duration="15746000" />
     </task>
     <servers />
   </component>
@@ -228,12 +216,12 @@
     </state>
     <state width="1361" height="189" key="GridCell.Tab.0.right/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582628989980" />
     <state width="1361" height="189" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1582817263946" />
-    <state x="514" y="289" key="NewPhpFileDialog" timestamp="1582790160053">
+    <state x="514" y="289" key="NewPhpFileDialog" timestamp="1582872897090">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="514" y="289" key="NewPhpFileDialog/0.0.1360.728/-1360.0.1360.728@0.0.1360.728" timestamp="1582633383544" />
     <state x="514" y="289" key="NewPhpFileDialog/0.0.1360.728/1360.0.1366.728@0.0.1360.728" timestamp="1582690971780" />
-    <state x="514" y="289" key="NewPhpFileDialog/0.0.1360.728@0.0.1360.728" timestamp="1582790160053" />
+    <state x="514" y="289" key="NewPhpFileDialog/0.0.1360.728@0.0.1360.728" timestamp="1582872897090" />
     <state x="253" y="14" key="SettingsEditor" timestamp="1582786853076">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

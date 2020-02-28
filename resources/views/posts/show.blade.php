@@ -31,6 +31,32 @@
                         <a href="/posts/{{ $post->id }}/edit" class="btn btn-outline-dark float-md-right">Edit</a>
                     @endif
                 @endauth
+
+                <!-- COMMENTS SECTION -->
+                <br \> <br \>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="form-group shadow-textarea">
+                            <h4>Comments</h4>
+                            @if (Auth::check())
+                                @include('inc.messages')
+                                {{ Form::open(['route' => ['comments.store'], 'method' => 'POST']) }}
+                                <p>{{ Form::textarea('body', old('body'), ['class' => 'md-textarea form-control', 'rows' => '2']) }}</p>
+                                {{ Form::hidden('post_id', $post->id) }}
+                                <p>{{ Form::submit('Send') }}</p>
+                                {{ Form::close() }}
+                            @endif
+                            @forelse ($post->comments as $comment)
+                                <p>{{ $comment->user->name }} {{$comment->created_at}}</p>
+                                <p>{{ $comment->body }}</p>
+                                <hr>
+                            @empty
+                                <p>This post has no comments</p>
+                            @endforelse
+                        </div>
+                    </div>
+                </div>
             </div>
+
     @include('inc.sidebar')
 @endsection
