@@ -6,3 +6,13 @@
 body {
   padding-top: 56px;
 }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 1px;
+}
+a {
+    color: hotpink;
+}

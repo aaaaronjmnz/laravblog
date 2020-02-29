@@ -21,7 +21,7 @@
                                 <a href="posts/{{ $post->id }}" class="btn btn-primary">Read More &rarr;</a>
                             </div>
                             <div class="card-footer text-muted">
-                                Posted on {{ $post->created_at }} by
+                                Posted on {{ $post->created_at->format('F d, Y') }} by
                                 <a href="#">{{ $post->user->name }}</a>
                             </div>
                         </div>

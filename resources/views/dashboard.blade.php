@@ -23,7 +23,7 @@
                             </tr>
                             @foreach($posts as $post)
                                 <tr>
-                                    <td>{{ $post->title }}</td>
+                                    <td><a href="/posts/{{ $post->id }}" class="nav-link">{{ $post->title }}</a></td>
                                     <td><object>{!! Str::limit($post->body, 100) !!}</object></td>
                                     <td><a href="/posts/{{ $post->id }}/edit" class="btn btn-outline-dark">Edit</a></td>
                                     <td>
