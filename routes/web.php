@@ -23,6 +23,7 @@ Route::resource('posts', 'PostController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/profile', 'ProfileController@index');
 
 Route::get('/posts/{id}', 'PostController@show')->name('posts.show');
 

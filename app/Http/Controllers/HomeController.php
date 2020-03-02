@@ -4,6 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\View\View;
+use App\Post;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -25,7 +32,7 @@ class HomeController extends Controller
     public function index()
     {
         $user_id = auth()->user()->id;
-        $user = User::find($user_id);
-        return view('dashboard')->with('posts', $user->posts);
+        $user = User::find($user_id)->posts()->orderBy('created_at', 'desc')->paginate(5);
+        return view('dashboard')->with('posts', $user);
     }
 }

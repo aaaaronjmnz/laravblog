@@ -35,6 +35,11 @@
                                 </tr>
                             @endforeach
                         </table>
+
+                    <!-- PAGINATION -->
+                        <ul class="pagination justify-content-center mb-4">
+                            {{ $posts->links() }}
+                        </ul>
                     @else
                         <h5>Manage your Posts here</h5>
                         <table class="table table-striped">
@@ -43,6 +48,7 @@
                             </tr>
                         </table>
                     @endif
+
                 </div>
             </div>
         </div>
